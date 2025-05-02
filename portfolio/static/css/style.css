@@ -130,100 +130,48 @@ h4 {
 
 
 /* Skills */
-#skills {
-    margin-top: 3rem;
+#skills{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.tech-logos.scroll {
+    overflow: hidden;
+    width: 100%; 
+    padding: 20px 0;
+    position: relative;
 }
 
-.skills-left {
-    width: 50%;
+.logos-track {
+    display: flex;
+    gap: 40px; 
+    animation: animate 20s linear infinite; 
+    width: max-content; 
 }
 
-.skills-left img {
-    width: 85%;
+.tech-logo {
+    width: 150px; 
+    height: 150px; 
+    object-fit: contain;
+    flex-shrink: 0;  
+    padding: 5px;
+    background-color: black;
+    border-radius: 10px;
 }
 
-.skills-right {
-    width: 50%;
+.tech-logo:hover {
+    filter: grayscale(0%);
 }
 
-.skillss-container {
-    width: 100%;
-}
-.java {
-    width: 90%;
-    height: .5rem;
-    background-color: #e54c21;
-    margin: 1rem 0;
-    border-radius: 12px;
+@keyframes animate {
+    0% {
+        transform: translateX(100); 
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
-.html {
-    width: 90%;
-    height: .5rem;
-    background-color:  #00a0e4;
-    margin: 1rem 0;
-    border-radius: 12px;
-}
-
-.css {
-    width: 80%;
-    height: .5rem;
-    background-color:yellow;
-    margin: 1rem 0;
-    border-radius: 12px;
-}
-
-.js {
-    width: 65%;
-    height: .5rem;
-    background-color:red;
-    margin: 1rem 0;
-    border-radius: 12px;
-}
-
-.python {
-    width: 50%;
-    height: .5rem;
-    background-color: #7952b3;
-    margin: 1rem 0;
-    border-radius: 12px;
-}
-
-.mysql {
-    width: 30%;
-    height: .5rem;
-    background-color: #61dafb;
-    margin: 1rem 0;
-    border-radius: 12px;
-}
-
-.learning {
-    width: 100%;
-    height: .5rem;
-    background-color: #61dbfb;
-    margin: 1rem 0;
-    border-radius: 12px;
-}
-
-.bar {
-    margin: 2rem 0;
-}
-
-.bar-content {
-    position: absolute;
-    bottom: 10px;
-}
-
-.left {
-    left: 0;
-}
-
-.right-skills {
-    right: 0;
-}
-
-
-
+  
 
 
 /* Projects Section */
@@ -346,6 +294,13 @@ ul li a:hover {
     font-family: 'Roboto', sans-serif;
 }
 
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 50;
+  font-style: normal;
+  color:white;
+}
+
 .flex {
     display: flex;
 }
@@ -450,3 +405,5 @@ ul li a:hover {
     color: #1f1f38;
     background-color: #da7fa8;
 }
+
+
