@@ -70,14 +70,21 @@ body {
 
 .home-left h6,
 h4 {
-    color: rgb(216, 117, 173);
+    color: white;
     margin: 1rem 0;
     margin-left: 3px;
-    font-size: 5rem;
+    font-size: 4rem;
+    display: flex;
+    
+    
 }
 
 .home-left h1 {
     font-size: 4rem;
+    margin-bottom: 100px;
+    font-family: cursive;
+    display:flex;
+
 }
 
 .home-right {
@@ -139,6 +146,7 @@ h4 {
     width: 100%; 
     padding: 20px 0;
     position: relative;
+    display:flex;
 }
 
 .logos-track {
@@ -146,6 +154,8 @@ h4 {
     gap: 40px; 
     animation: animate 20s linear infinite; 
     width: max-content; 
+    gap:2rem;
+    align-items: center;
 }
 
 .tech-logo {
@@ -163,10 +173,7 @@ h4 {
 }
 
 @keyframes animate {
-    0% {
-        transform: translateX(100); 
-    }
-    100% {
+    to{
         transform: translateX(-100%);
     }
 }
@@ -331,7 +338,7 @@ ul li a:hover {
 }
 
 .t-white {
-    color: #fff;
+    color: #ffff
 }
 
 .bg-color {
